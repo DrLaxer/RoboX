@@ -1,0 +1,14 @@
+>>ROX INIT
+>>ROX LOAD @"%PATH_MAP%"
+>>ROX ERRORNO @"LL_0x0"
+>>START
+
+function: void main()[@arg--] //TODO: change arg
+{
+var: int64 Tick;
+var: str Str = << @[ERRORNO.misc.back];
+comeback[sizeof(@[main.args])];
+}
+
+>>ROXDES[-all; -cc; -win] //TODO: debug -win and convert to "@[GETSYS_ID]"
+>>END // not safe
