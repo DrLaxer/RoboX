@@ -2,15 +2,17 @@
 >>ROX LOAD @"%PATH_MAP%"
 >>ROX ERRORNO @"LL_0x0"
 >>START
-
-function: void main()[@arg--] //TODO: change arg
+>>ROX DO @"MAIN.APP.GIT.ADD'DEV'@GET['DEV']" "-RELOAD -REUP"
+function: void main( var: int16 s, var: int16 c)[@arg--] //TODO: change arg
 {
 var: int64 Tick;
 var: str Str = << @[ERRORNO.misc.back];
 comeback[sizeof(@[main.args])];
 }
 
->>ROXDES[-all; -cc; -win] //TODO: debug -win and convert to "@[GETSYS_ID]"
->>END // not safe
->>#IF 1 // mac and lin issue
->>ROX END
+>>ALT "MAIN"
+>>SHIFT "MAIN"
+>>ROXDES[-all; -cc; -(ROXDES--)@[GETSYS_ID]]
+>>END
+>>END [-c] 
+
