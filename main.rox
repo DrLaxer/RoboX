@@ -11,7 +11,7 @@ comeback[sizeof(@[main.args])];
 }
 
 //at last
-
+//sekk
 >>ALT "MAIN"
 >>SHIFT "MAIN"
 >>ROXDES[-all; -cc; -(ROXDES--)@[GETSYS_ID]]
