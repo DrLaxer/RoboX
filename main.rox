@@ -12,3 +12,5 @@ comeback[sizeof(@[main.args])];
 
 >>ROXDES[-all; -cc; -win] //TODO: debug -win and convert to "@[GETSYS_ID]"
 >>END // not safe
+>>#IF 1 // mac and lin issue
+>>ROX END
